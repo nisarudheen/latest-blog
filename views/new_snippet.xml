@@ -1,0 +1,9 @@
+<odoo>
+    <data>
+        <template id="latest_blog_snippet" name="Latest Blog">
+            <section class="container dynamic_snippet_blog">
+                <div class="qweb_latest_blog"></div>
+            </section>
+        </template>
+    </data>
+</odoo>

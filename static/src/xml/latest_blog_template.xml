@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates id="template" xml:space="preserve" name="Latest Blog">
+    <t t-name="latest_blog.blog_snippet">
+        <section class="container dynamic_snippet_blog">
+            <div class="row">
+                <div class="col-md-12">
+                        <h1 >
+                            LATEST BLOG
+                        </h1>
+                    <div class="row">
+                            <t t-foreach="name" t-as="order">
+                                    <div class="card col-md-3">
+                                    <div class="card-body">
+                                        <div>
+                                           <a t-attf-href="/blog/{{order[2]}}/{{order[1]}}">
+                                        <img class="card-img-top" width="90"
+                                             height="250"
+                                             t-attf-src="/website_blog/static/src/img/cover_{{order[1]}}.jpg"/>
+                                           </a>
+
+                                        <br>
+                                        </br>
+                                        <span class="names" t-esc="order[0]"></span>
+                                    </div>
+                                        </div>
+                                </div>
+
+                            </t>
+            </div>
+                </div>
+            </div>
+            </section>
+    </t>
+</templates>

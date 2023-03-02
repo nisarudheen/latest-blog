@@ -1,0 +1,10 @@
+<odoo>
+    <template id="external_snippets1" inherit_id="website.snippets"
+              priority="8">
+        <xpath expr="//div[@id='snippet_effect']" position="inside">
+            <div class="o_panel_body">
+                <t t-snippet="latest_blog.latest_blog_snippet"/>
+            </div>
+        </xpath>
+    </template>
+</odoo>
